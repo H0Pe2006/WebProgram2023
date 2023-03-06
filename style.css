@@ -8,7 +8,7 @@ body{
     margin: 1;
     font-family: 'Montserrat', sans-serif;
     background: no-repeat center/cover url('assets/praia.jpg');
-    height: calc(127vh - 150px);
+    height: calc(200vh - 1400px);
 }
 
 ul{
@@ -24,7 +24,7 @@ a {
 }
 
 h1{
-    color: black;
+    color: rgb(5, 4, 2);
     font-size: 4rem;
 }
 
@@ -79,4 +79,39 @@ header nav ul li{
 .header-content h1{
     margin-bottom: 10px;
     font-size: 4rem;
+}
+
+.pacotes{
+    background: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.pacotes .pacotes-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pacotes .pacotes-title{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.pacotes .card{
+    width: 250px;
+    height: 200px;
+    background: rgb(202, 33, 33);
+    border-radius: 24px 0;
+    margin: 25px;
+    position: relative;
+}
+
+.pacotes .card-image{
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
 }
