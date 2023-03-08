@@ -14,8 +14,6 @@ body{
 ul{
     list-style: circle;
     font-weight: bold;
-    color: black;
-    font-size: 1.3rem;
 }
 
 a {
@@ -25,7 +23,7 @@ a {
 
 h1{
     color: rgb(5, 4, 2);
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 h2{
@@ -82,7 +80,7 @@ header nav ul li{
 }
 
 .pacotes{
-    background: rgb(255, 255, 255);
+    background: rgb(36, 179, 214);
     padding: 15px;
 }
 
@@ -103,7 +101,7 @@ header nav ul li{
 .pacotes .card{
     width: 250px;
     height: 200px;
-    background: rgb(202, 33, 33);
+    background:white;
     border-radius: 24px 0;
     margin: 25px;
     position: relative;
@@ -114,4 +112,30 @@ header nav ul li{
     height: 200px;
     border-radius: 24px 0 0 0;
     object-fit: cover;
+}
+
+.pacotes .card-content{
+    padding: 0 15px;
+
+}
+
+.pacotes .card-content ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.pacotes .card-content ul li{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    color: grey;
+    font-weight: bold
+}
+
+.pacotes .card-content li svg{
+    width: 16px;
+    height: 16px;
+
 }
