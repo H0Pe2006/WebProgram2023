@@ -7,8 +7,8 @@
 body{
     margin: 1;
     font-family: 'Montserrat', sans-serif;
-    background: no-repeat center/cover url('assets/praia.jpg');
-    height: calc(200vh - 1400px);
+    background: no-repeat center/cover url('assets/floresta-amazonica-paisagem.webp');
+    height: calc(120vh - 150px);
 }
 
 ul{
@@ -18,16 +18,16 @@ ul{
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 h1{
-    color: rgb(5, 4, 2);
+    color: rgb(17, 17, 17);
     font-size: 2rem;
 }
 
 h2{
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 2rem;
 }
 
@@ -37,6 +37,11 @@ button{
     color:black;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9rem;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
 }
 
 h4{
@@ -130,7 +135,7 @@ header nav ul li{
     display: flex;
     align-items: center;
     margin: 3px;
-    color: grey;
+    color: rgb(77, 74, 74);
     font-weight: bold
 }
 
@@ -138,4 +143,13 @@ header nav ul li{
     width: 16px;
     height: 16px;
 
+}
+
+li{
+    color: rgb(12, 12, 12);
+    font-size: 1.4rem;
+}
+
+.header .nav .h1{
+    margin: 6px;
 }
