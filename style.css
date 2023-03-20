@@ -105,7 +105,7 @@ header nav ul li{
 
 .pacotes .card{
     width: 250px;
-    height: 200px;
+    height: 400px;
     background:white;
     border-radius: 24px 0;
     margin: 25px;
@@ -142,7 +142,7 @@ header nav ul li{
 .pacotes .card-content li svg{
     width: 16px;
     height: 16px;
-
+    margin-right: 10px;
 }
 
 li{
@@ -152,4 +152,96 @@ li{
 
 .header .nav .h1{
     margin: 6px;
+}
+
+.pacotes .card-content h1{
+    font-size: 1rem;
+}
+
+.pacotes .card-contentli h1{
+    font-size: 1rem;
+}
+
+.pacotes .card .card-tag-top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #f19b39;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-bottom{
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.servicos{
+    padding: 15px;
+}
+
+.servicos .servicos-title{
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-cards{
+    margin: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.servicos .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.card .card-content p{
+    font-size: 1rem;
+}
+
+.servicos .card svg{
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover{
+    stroke: rgb(44, 133, 248);
+    transform: scale(1.1);
+}
+
+.servicos .card h3{
+    font-weight: bold;
+    color: black;
+}
+
+.servicos .card p{
+    color: rgb(0, 0, 0);
+    font-size: 1rem ;
+    text-align: center;
+}
+
+.servicos .card .card-content{
+    height: 180px;
+    text-align: center;
 }
