@@ -54,10 +54,10 @@ p{
     font-style: italic;
 }
 
-/*header{
-    background: no-repeat center/cover url('assets/praia.jpg');
-    height: calc(127vh - 150px);
-}*/
+header{
+    background: no-repeat center/cover url('assets/praias-trancoso.jpg');
+    height: calc(120vh - 150px);
+}
 
 header nav{
     display:flex;
@@ -244,4 +244,39 @@ li{
 .servicos .card .card-content{
     height: 180px;
     text-align: center;
+}
+
+.contato{
+    padding: 60px;
+    background: rgb(103, 217, 252);
+    position: relative;
+    text-align: right;
+}
+
+.contato .contato-card{
+    width: 450px;
+    height: 350;
+    background: white;
+    position: absolute;
+    z-index: 99;
+    border-radius: 8px;
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato .contato-card h1{
+    padding: 50px;
+    text-align: left;
+}
+
+.contato .contato-card li{
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
 }
