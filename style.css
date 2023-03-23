@@ -7,40 +7,40 @@
 body{
     margin: 1;
     font-family: 'Montserrat', sans-serif;
-    background: no-repeat center/cover url('assets/floresta-amazonica-paisagem.webp');
+    background: no-repeat center/cover url('assets/falonada.jfif');
     height: calc(120vh - 150px);
 }
 
 ul{
-    list-style: circle;
+    list-style: disc;
     font-weight: bold;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    text-decoration:none;
+    color: rgb(235, 235, 235);
 }
 
 h1{
-    color: rgb(17, 17, 17);
+    color: rgb(247, 247, 247);
     font-size: 2rem;
 }
 
 h2{
-    color: rgb(0, 0, 0);
+    color: rgb(204, 214, 216);
     font-size: 2rem;
 }
 
 button{
     padding: 10px 15px;
-    border-radius: 8px;
+    border-radius: 20px;
     color:black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 h3{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1.3rem;
 }
 
@@ -55,7 +55,7 @@ p{
 }
 
 header{
-    background: no-repeat center/cover url('assets/praias-trancoso.jpg');
+    background: no-repeat center/cover url('assets/falonada.jfif');
     height: calc(120vh - 150px);
 }
 
@@ -85,8 +85,8 @@ header nav ul li{
 }
 
 .pacotes{
-    background: rgb(36, 179, 214);
-    padding: 15px;
+    background: rgb(18, 67, 95);
+    padding: 20px;
 }
 
 .pacotes .pacotes-cards{
@@ -175,7 +175,7 @@ li{
     position: absolute;
     left: 0;
     top: 160px;
-    background: #1d61dd;
+    background: #c44242;
     border-radius: 0 8px 8px 0;
     padding: 5px 10px;
 }
@@ -221,7 +221,7 @@ li{
 .servicos .card svg{
     width: 60px;
     height: 60px;
-    margin: 50px;
+    margin:10px;
     transition: all 1s;
 }
 
@@ -248,7 +248,8 @@ li{
 
 .contato{
     padding: 60px;
-    background: rgb(103, 217, 252);
+    background: rgb(64, 82, 129);
+    background-position-y:center;
     position: relative;
     text-align: right;
 }
@@ -269,7 +270,7 @@ li{
 }
 
 .contato .contato-card h1{
-    padding: 50px;
+    padding: 20px;
     text-align: left;
 }
 
@@ -279,4 +280,14 @@ li{
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
+    height: 39px;
+    
+}
+
+.pacotes .card-content h1{
+    color: black;
+}
+
+.contato-card h1{
+    color: black;
 }
