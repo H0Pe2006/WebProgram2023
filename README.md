@@ -1,1 +1,1 @@
-<h1>Repositorio Para a Diciplina de Programação para a Internet</h1>
+<h1>Repositorio para a diciplina de Programação para a Internet</h1>
