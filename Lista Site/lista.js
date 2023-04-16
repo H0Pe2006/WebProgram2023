@@ -1,5 +1,8 @@
 const nameList = ["Aline", "Pafuncio", "Julio", "Narebas", "Ana Conda", "James", "Yago", "Elisius"]
 
+const nomeAux = nameList;
+
+var num_seleciona = -1;
 
 const btfl = document.getElementById("fl");
 const btadd = document.getElementById("add");
@@ -15,14 +18,21 @@ this.fillList();
 function fillList(list = nameList) {
     listEl.innerHTML = "";
     for(let i = 0; i < list.length; i++) {
+
         let listItems = document.createElement("li");
+
+        if (num_seleciona == i){
+            listItems.className = "alert alert-link";
+        } else{
+            listItems.className = "";
+        }
         listItems.innerHTML = list[i];
         listEl.appendChild(listItems);
     }
 }
 
 function inputHandler() {
-    saida.innerHTML = ""
+  
     const filteredList = nameList.filter(el => {
         const listItems = el.toLowerCase();
         const searchWord = searchField.value.toLowerCase();
@@ -34,35 +44,50 @@ function inputHandler() {
 btfl.addEventListener("click", inputHandler);
 
 function addNome(){
-    nm = searchField.value.toLowerCase();
-    if (nm != ''){
-        if (nameList.indexOf(nm) == -1){
-            nameList.push(nm);
-            saida.innerHTML = "SUCESSO! " + nm + " adicionado";
+    num_seleciona = 0;
+    nome = searchField.value.toLowerCase();
+    if (nome != ''){
+        if (nameList.indexOf(nome) == -1){
+            nameList.push(nome);
+            saida.innerHTML = "SUCESSO! "+nome+" adicionado";
         } else {
-            saida.innerHTML = "VIXI! Esse nome ja esta adicionado"
+            saida.innerHTML = "OPS! Este nome ja foi adicionado"
         }
-    
     } else {
-        saida.innerHTML = "Insira o nome desejado!"
+        saida.innerHTML = " Por favor insira um nome válido"
     }
-
 }
 
 btadd.addEventListener("click", addNome);
 
 
-function nomeRemove(){
-    nm = searchField.value.toLowerCase();
+function remNome(){
+    
+    nome = nameList[num_seleciona ];
 
-    var index = nameList.indexOf(nm);
-    if (index > -1) {
-        nameList.splice(index, 1);
-        saida.innerHTML = "SUCESSO! " + nm + " removido";
-      } else {
-        saida.innerHTML = 'OPS! O nome '+ nm +' não existe';
-      }
+    nameList.splice(num_seleciona , 1);
+    saida.innerHTML = "SUCESSO! "+ nome+ " removido";
+
+    inputHandler();
     
 }
+btrem.addEventListener("click", remNome);
+    
+function selNome(){
+    saida.innerHTML = ""
 
-btrem.addEventListener("click", nomeRemove);
+    var aux = nameList[num_seleciona]
+
+    if (nameList.length == num_seleciona){
+        num_seleciona = 0;
+    } else{
+    num_seleciona += 1;
+    }
+
+    console.log(num_seleciona);
+
+    inputHandler();
+
+}
+
+btsel.addEventListener("click", selNome)
