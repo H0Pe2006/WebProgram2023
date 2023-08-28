@@ -1,5 +1,5 @@
-#npm i -g yarn
+* npm i -g yarn
 
-#yarn init
+* yarn init
 
-#yarn add -D typescript
+* yarn add -D typescript
